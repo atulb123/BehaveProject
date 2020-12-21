@@ -8,3 +8,5 @@ Behave.ini is present outside the features folder and has attributes which has e
 
 And the command to run scenario is :
 behave --define browser="chrome" --define env="stage" --tags=regression
+
+behave --define timeout=900 -f allure_behave.formatter:AllureFormatter -o reports/ --no-capture --format plain  --tags=smoke
